@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BNRShowMsgView">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_0000_password" translatesAutoresizingMaskIntoConstraints="NO" id="CqS-pz-Q8v">
+                    <rect key="frame" x="63" y="89" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CqS-pz-Q8v" secondAttribute="height" multiplier="1:1" id="kam-az-UQ2"/>
+                        <constraint firstAttribute="width" constant="39" id="so1-PM-QQ4"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_0000_password" translatesAutoresizingMaskIntoConstraints="NO" id="SOz-QB-78A">
+                    <rect key="frame" x="63" y="26" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="pQg-cX-cgA"/>
+                        <constraint firstAttribute="width" secondItem="SOz-QB-78A" secondAttribute="height" multiplier="1:1" id="sMn-FP-mGF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weChatBubble_Receiving_Solid" translatesAutoresizingMaskIntoConstraints="NO" id="YRw-Yd-BGP">
+                    <rect key="frame" x="103" y="89" width="66" height="45"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weChatBubble_Receiving_Solid" translatesAutoresizingMaskIntoConstraints="NO" id="1je-S8-Tfg">
+                    <rect key="frame" x="103" y="26" width="81" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="4AW-Qm-c0d"/>
+                        <constraint firstAttribute="width" constant="81" id="muE-Lx-bvj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weT-dX-NXB">
+                    <rect key="frame" x="8" y="8" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Q39-6x-Lur"/>
+                        <constraint firstAttribute="width" secondItem="weT-dX-NXB" secondAttribute="height" multiplier="1:1" id="cjh-6l-AYK"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ExitButton"/>
+                    <state key="highlighted" backgroundImage="ExitButtonPressed"/>
+                    <connections>
+                        <action selector="exit:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Tb-0x-raf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="weT-dX-NXB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9As-FN-rks"/>
+                <constraint firstItem="weT-dX-NXB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="9dy-CV-cXi"/>
+                <constraint firstItem="SOz-QB-78A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="AjT-IU-mvE"/>
+                <constraint firstItem="1je-S8-Tfg" firstAttribute="leading" secondItem="SOz-QB-78A" secondAttribute="trailing" constant="1" id="L0E-2a-BK3"/>
+                <constraint firstItem="YRw-Yd-BGP" firstAttribute="leading" secondItem="CqS-pz-Q8v" secondAttribute="trailing" constant="1" id="Ncr-Ra-wee"/>
+                <constraint firstItem="SOz-QB-78A" firstAttribute="top" secondItem="1je-S8-Tfg" secondAttribute="top" id="PUq-Uf-7fd"/>
+                <constraint firstItem="CqS-pz-Q8v" firstAttribute="top" secondItem="SOz-QB-78A" secondAttribute="bottom" constant="24" id="TJj-J9-evX"/>
+                <constraint firstItem="CqS-pz-Q8v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="63" id="aUE-ys-36H"/>
+                <constraint firstItem="CqS-pz-Q8v" firstAttribute="top" secondItem="YRw-Yd-BGP" secondAttribute="top" id="wQx-du-4HS"/>
+                <constraint firstItem="SOz-QB-78A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="63" id="zQQ-zB-Kaz"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avtor1" destination="SOz-QB-78A" id="NvO-ra-Z1N"/>
+                <outlet property="avtor2" destination="CqS-pz-Q8v" id="hIY-q9-Eok"/>
+                <outlet property="bubbleMsg" destination="YRw-Yd-BGP" id="Sdh-PE-8KT"/>
+                <outlet property="bubbleVoice" destination="1je-S8-Tfg" id="27v-ry-mZi"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="257"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ExitButton" width="28" height="28"/>
+        <image name="ExitButtonPressed" width="28" height="28"/>
+        <image name="pic_0000_password" width="240" height="240"/>
+        <image name="weChatBubble_Receiving_Solid" width="66" height="45"/>
+    </resources>
+</document>
